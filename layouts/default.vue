@@ -10,6 +10,18 @@ import NavBar from '../components/NavBar'
 export default {
   components: {
     NavBar
+  },
+  head() {
+    return {
+      titleTemplate: '%s - First NUXT Application',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'My default description'
+        }
+      ]
+    }
   }
 }
 </script>
